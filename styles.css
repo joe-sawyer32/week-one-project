@@ -1,0 +1,440 @@
+/*COLORS
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+
+@font-face {
+    font-family: "Merriweather Regular";
+    src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather Light";
+    src: url(./fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather Light Italic";
+    src: url(./fonts/Merriweather/Merriweather-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+    width: 1279px;
+    margin: auto;
+    background-color: #0E0E0E;
+}
+
+.fixed_nav_header {
+    position: fixed;
+    z-index: 1;
+}
+
+.nav_header {
+    width: 1279px;
+    height: 70px;
+    display: flex;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    box-shadow: 0 2px 2px -1px #E4E2DE;
+}
+
+#nav_logo {
+    width: 84px;
+    background-image: url(./images/bent-creek-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 0;
+}
+
+.nav_links {
+    width: 1279px;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links a:hover {
+    transition-duration: 1s;
+    color: #CD5D67;
+}
+
+.active_nav_link_item {
+    margin: 26px 32px 24px 32px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: "Roboto Regular";
+    color: #968772;
+}
+
+.nav_link_item {
+    margin: 26px 32px 24px 32px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: "Roboto Regular";
+    color: #2B2F26;
+}
+
+.home_content {
+    height: 902px;
+    padding: 0 24px 8px 24px;
+    font-family: "Merriweather Regular";
+    background-color: #F2F1E8;
+    position: relative;
+    top: 70px;
+}
+
+.home_content_heading {
+    position: relative;
+    top: 54px;
+    font-family: "Merriweather Light";
+}
+
+.home_content_heading_text {
+    font-size: 65px;
+    text-align: center;
+}
+
+.home_content_subheading {
+    position: relative;
+    top: 54px;
+    font-family: "Merriweather Light";
+    margin: 7px 0 28px 0;
+}
+
+.home_content_subheading_text {
+    font-size: 38px;
+    text-align: center;
+}
+
+.home_content_images {
+    position: relative;
+    top: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home_content_img_item {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.item_label {
+    height: 54px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #2B2F26;
+    color: #F2F1E8;
+    font-size: 19px;
+}
+
+.home_content_images #image_1 {
+    width: 732px;
+    height: 368px;
+    background-image: url(./images/product-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_2 {
+    width: 233px;
+    height: 368px;
+    background-image: url(./images/product-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_3 {
+    width: 233px;
+    height: 368px;
+    background-image: url(./images/product-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_4 {
+    width: 233px;
+    height: 240px;
+    background-image: url(./images/product-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_5 {
+    width: 235px;
+    height: 240px;
+    background-image: url(./images/product-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_6 {
+    width: 483px;
+    height: 240px;
+    background-image: url(./images/product-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_content_images #image_7 {
+    width: 233px;
+    height: 240px;
+    background-image: url(./images/product-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.copyright_footer {
+    height: 102px;
+    background-color: #2B2F26;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 70px;
+}
+
+#copyright {
+    margin: 24px;
+    font-family: "Merriweather Regular";
+    font-size: 18px;
+    color: #F2F1E8;
+}
+
+.about_content {
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    color: #131511;
+    background-color: #F2F1E8;
+    font-family: "Merriweather Light";
+}
+
+.about_content_section {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 203px 56px 203px;
+}
+
+#birdhouse {
+    width: 160px;
+    height: 120px;
+    margin: 0 32px 32px 0;
+    background-image: url(./images/birdhouse.jpg);
+    background-size: contain;
+    float: left;
+}
+
+.primary_text {
+    line-height: 1.9;
+    font-size: 20px;
+    font-family: "Merriweather Light";
+}
+
+.primary_text_quote {
+    font-family: "Merriweather Light Italic";
+    font-size: 19px;
+    line-height: 1.9;
+    padding-left: 32px;
+    margin: 36px 0;
+    border-left: 2px solid #968772;
+}
+
+.about_content_subheading {
+    font-size: 28px;
+    line-height: 2.5;
+}
+
+.about_content_heading_2 {
+    background-image: url(./images/background-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about_content #about_heading_1 {
+    margin: 56px 0;
+    color: #131511;
+    font-size: 65px;
+    text-align: center;
+}
+
+.about_content #about_heading_2 {
+    margin: 119px 0;
+    color: #F2F1E8;
+    font-size: 65px;
+    text-align: center;
+}
+
+#section_with_aside_1 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.about_sub_aside {
+    margin-left: 32px;
+}
+
+#background_1 {
+    width: 160px;
+    height: 120px;
+    margin: 16px 0 20px 0;
+    background-image: url(./images/background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aside_text {
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.about_content_table {
+    font-size: 19px;
+    font-family: "Merriweather Regular";
+    border-collapse: collapse;
+}
+
+.header_row {
+    text-align: center;
+}
+
+.row_color_darker {
+    background-color: #F2EADC;
+}
+
+.row_item {
+    padding: 18px 18px 18px 16px;
+    border: 1px solid #131511;
+}
+
+.inline_link {
+    color: #968772;
+    text-decoration: underline;
+}
+
+.inline_link:hover {
+    transition-duration: 1s;
+    color: #967343;
+}
+
+.inline_anchor_point {
+    position: relative;
+    bottom: 70px;
+}
+
+.newsletter_page {
+    width: 1279px;
+    min-height: 100vh;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_content {
+    width: 1279px;
+    padding: 70px;
+    background-image: url(./images/background-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter_signup {
+    padding-top: 33px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 44px 0;
+}
+
+.newsletter_heading {
+    font-size: 28px;
+    font-family: "Merriweather Light";
+    margin: 16px 0;
+}
+
+.newsletter_subheading {
+    font-size: 19px;
+    font-family: "Merriweather Regular";
+    margin: 7px 0;
+}
+    
+.newsletter_form {
+    width: 614px;
+    text-align: center;
+}
+
+.form_input_item {
+    width: 544px;
+    margin-top: 36px;
+    padding: 7px 0;
+    border-bottom: #968772 solid 2px;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: #757575;
+}
+
+.form_input_item:focus {
+    transition-duration: 3s;
+    border-bottom: #967343 solid 2px;
+}
+
+.form_submit_button {
+    background-color: #968772;
+    color: #F2F1E8;
+    font-size: 18px;
+    font-family: "Roboto Regular";
+    margin: 32px;
+    padding: 18px 36px;
+}
+
+.form_submit_button:hover {
+    transition-duration: 1s;
+    background: #967343;
+    color: #FFFFFF;
+}
